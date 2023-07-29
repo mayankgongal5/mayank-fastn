@@ -1,0 +1,73 @@
+
+-- import: fastn/processors as pr
+-- ftd.row:
+spacing: space-evenly
+width: fill-container
+-- ftd.image:
+src: $just-light
+border-radius.px: 300
+border-color: hotpink
+border-width.px: 20
+
+
+-- end: ftd.row
+-- ftd.row:
+spacing: space-evenly
+width: fill-container
+-- ftd.text:
+text: Mayank Ashok Gongal
+role: $inherited.types.heading-large
+color: green
+-- end: ftd.row
+
+-- ftd.image-src just-light: https://avatars.githubusercontent.com/u/111949604?v=4
+
+-- import: fastn/processors as pr
+
+-- ftd.row:
+spacing: space-evenly
+width: fill-container
+-- ftd.text:
+text: I am a Fastn Developer and this is my portfolio
+role: $inherited.types.heading-medium
+color: black
+-- end: ftd.row
+
+-- ftd.row:
+spacing: space-evenly
+width: fill-container
+-- ftd.text:
+text: - Fastn
+role: $inherited.types.heading-small
+color: black
+-- end: ftd.row
+-- ftd.row:
+spacing: space-evenly
+width: fill-container
+-- ftd.text:
+text: - Video Editing
+role: $inherited.types.heading-small
+color: black
+-- end: ftd.row
+-- ftd.row:
+spacing: space-evenly
+width: fill-container
+-- ftd.text:
+text: - Flutter
+role: $inherited.types.heading-small
+color: black
+-- end: ftd.row
+
+-- import: fastn/processors as pr
+
+-- result r:
+$processor$: pr.http
+url: https://api.github.com/mayankgongal5/repos
+sort: repos
+order: desc
+
+
+
+
+
+
